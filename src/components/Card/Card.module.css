@@ -1,0 +1,95 @@
+.container {
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+.container h3 {
+    color: var(--limeGreen);
+}
+
+.container p {
+    font-size: 1.70rem;
+    line-height: 2.5rem;
+}
+
+.cardImgSection {
+    flex: 0 0 40%;
+    align-self: stretch;
+}
+
+.cardMain {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.cardMain h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cardBottom {
+    margin-top: 3rem;
+}
+
+.ul {
+    list-style: none;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ul li {
+    flex: 0 0 50%;
+    align-content: space-around;
+    height: 10rem;
+}
+
+.ul li p:first-child {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.ul li p:last-child {
+    font-family: var(--oswald);
+    color: var(--limeGreen);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    .container {
+        flex-direction: column;
+    }
+
+    .cardImgSection {
+        align-self: center;
+    }
+
+    .cardMain {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 43.75em) {
+    .ul li {
+        flex: 0 0 100%;
+    }
+}
