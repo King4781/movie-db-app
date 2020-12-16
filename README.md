@@ -1,6 +1,8 @@
 # Movie DB App
 
-## Movie search application powered by the Movie DB API
+#### Site demo: https://elated-lamport-b7892a.netlify.app/
+
+#### Movie search application powered by the Movie DB API
 
 #### This is a React application that uses the Movie DB API. Feel free to extend the application in any way.
 
